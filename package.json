@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "execution-time": "^1.4.1"
+    "execution-time": "^1.4.1",
+    "node": "^16.10.0"
   }
 }
