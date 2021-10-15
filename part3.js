@@ -31,19 +31,22 @@ console.timeEnd('sum')
 
 //below is an attempt to use a cloned array to test conditions
 
-let arr2 = [3, 5, 6]
+let arr2 = [3, 5, 6, -5]
 
 function sumQuicker(arr) {
     let isTrue = 0;
     let isFalse = 0;
-
     let cloneArr = [...arr];
+
     for(let i = 0; i < arr.length; i++) {
-        if(arr[i] + cloneArr[i] === 0) {
-            isTrue ++;
-        } else {
-            isFalse ++
-        }
+        cloneArr[i] === arr[i];
+    for(let j = 0; j < arr.length; j++) {
+    if(arr[j] + cloneArr[i + 1] === 0) {
+        isTrue ++;
+    } else {
+        isFalse ++
+    }
+}
     }
     if(isTrue >= 1) {
         return true;
@@ -57,4 +60,4 @@ console.time('quicker');
 console.log(sumQuicker(arr2));
 console.timeEnd('quicker');
 
-//turns out this is much faster
+//turns out this is much faster - 1.225
